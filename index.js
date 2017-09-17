@@ -1,3 +1,21 @@
+$( document ).ready(function() {
+  $( ".cross" ).hide();
+  $( ".menu2" ).hide();
+  $( ".hamburger" ).click(function() {
+    $( ".menu2" ).slideToggle( "fast", function() {
+      $( ".hamburger" ).hide();
+      $( ".cross" ).show();
+    });
+  });
+
+  $( ".cross" ).click(function() {
+    $( ".menu2" ).slideToggle( "fast", function() {
+      $( ".cross" ).hide();
+      $( ".hamburger" ).show();
+    });
+  });
+
+});
 var URL = window.URL || window.webkitURL || window.mozURL || window.msURL;
 navigator.saveBlob = navigator.saveBlob || navigator.msSaveBlob || navigator.mozSaveBlob || navigator.webkitSaveBlob;
 window.saveAs = window.saveAs || window.webkitSaveAs || window.mozSaveAs || window.msSaveAs;

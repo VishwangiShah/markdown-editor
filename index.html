@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="lib/spell-checker.min.css">
     <link rel="stylesheet" href="lib/sweetalert.css">
     <link rel="stylesheet" href="index.css">
+    <script src="http://www.google.com/jsapi" type="text/javascript"></script>
+    <script type="text/javascript">google.load("jquery", "1.3.2");</script>
   </head>
   <body id="toplevel">
     <div id="loading-animation-container" class="animate-out">
@@ -142,6 +144,21 @@
         <a href = "https://github.com/aero31aero/markdown-editor" tooltip = "Check out the code on Github!">
           <p id="title" class="left"># Markdown Editor</p>
         </a>
+        <div class="ham">
+          <button class="hamburger">&#9776;</button>
+          <button class="cross">&#735;</button>
+          <div class="menu2">
+            <ul>
+              <span><li onclick="document.getElementById('fileInput').click();">Open_In_Browser</li></span>
+              <input id="fileInput" type="file" class="hidden" accept=".md,.mdown,.txt,.markdown"/>
+              <span><li onclick="showMenu()">File_Download</li></span>
+              <span><li onclick="saveInBrowser()">Save</li></span>
+              <span><li onclick="updateHash()">Share</li></span>
+              <span><li onclick="toggleNightMode(this)">Invert_Colors</li></span>
+              <span><li onclick="toggleReadMode(this)">Chrome_Reader_Mode</li></span>
+            </ul>
+          </div>
+        </div> 
         <p id="openbutton" title="Open from Disk" class="navbutton left" onclick="document.getElementById('fileInput').click();"><i class="material-icons">open_in_browser</i></p>
         <input id="fileInput" type="file" class="hidden" accept=".md,.mdown,.txt,.markdown"/>
         <p id="savebutton" title="Download" class="navbutton left" onclick="showMenu()"><i class="material-icons">file_download</i></p>

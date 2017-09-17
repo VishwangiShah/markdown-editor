@@ -115,6 +115,9 @@
      #viewbutton {
          display: inline-block !important;
      }
+     .ham {
+        display: inline-block !important;
+     }
  }
 
  .cm-header-1 {
@@ -284,4 +287,67 @@ body{
          display: none !important;
      }
  }
+  .hamburger {
+     color: #888;
+     cursor: pointer;
+     margin-top: 8px;
+     margin-bottom: 5px;
+     margin-left: 20px;
+     margin-right: 5px;
+     padding-top: 2px;
+     padding-bottom: 2px;
+     padding-left: 5px;
+     padding-right: 5px;
+     border-radius: 7px;
+ }
+ .cross {
+     color: #888;
+     cursor: pointer;
+     margin-top: 8px;
+     margin-bottom: 5px;
+     margin-left: 20px;
+     margin-right: 5px;
+     padding-top: 5px;
+     padding-bottom: 0px;
+     padding-left: 5px;
+     padding-right: 5px;
+     border-radius: 7px;
+ }
+.menu2 {
+    color:#888;
+    font-size:18px;
+    text-align: center;
+    z-index:1000000
+    height:50%;
+    margin:0px;
+}
+.menu2 ul {
+    margin: 0px;
+    list-style-type: none; 
+    list-style-image: none;
+    height:50%;
+    background-color: #000000;
+    width:70%;
+}
+.menu2 li {
+    margin:0px;
+    display: block;   
+    padding:15px 35px 15px 0px;
+    cursor:pointer;
+}
+.glyphicon-home {
+  color:white; 
+  font-size:1.5em; 
+  margin-top:5px; 
+  margin:0 auto;
+}
+.menu2 li:hover {
+    display: block;    
+    background:#262626; 
+    padding:15px 35px 15px 0;
+}
+.ham {
+    display:none;
+}
+
 
